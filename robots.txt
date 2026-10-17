@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Review release: indexing disabled pending domain and client approval
