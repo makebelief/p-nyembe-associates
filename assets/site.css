@@ -145,3 +145,16 @@ body{color:var(--ink)}.topbar{background:#111316;color:#e8e9eb}.topbar svg{color
 
 /* P Nyembe branding and full-bleed photographic hero guarantees */
 .hero{background-image:linear-gradient(90deg,rgba(3,12,30,.87),rgba(4,16,33,.48)),var(--hero-image)!important;background-size:cover!important;background-position:center!important}.hero::before{background:linear-gradient(90deg,rgba(3,11,28,.55),rgba(3,11,28,.10))!important}.page-hero{background-image:linear-gradient(90deg,rgba(3,12,30,.89),rgba(3,12,30,.54)),var(--page-hero-image)!important;background-position:center!important;background-size:cover!important}.site-footer,.topbar{background:#061830!important}.footer-logo img{height:auto!important;width:min(290px,100%)!important;max-width:100%!important;object-fit:contain}.brand img{height:auto!important;max-width:140px;width:125px}.nav-shell{background:#fff}.intro-picture img{object-fit:cover}
+
+/* Wakili wa Tech portrait safeguard: never crop an attorney's head or face.
+   Keep the supplied photograph's intrinsic aspect ratio on every viewport. */
+.intro-picture > img,
+.profile-photo > img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+}
